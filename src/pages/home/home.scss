@@ -1,3 +1,31 @@
 page-home {
+   .masters {
+     background-image:url("http://hdqwalls.com/wallpapers/material-design-hd-wallpaper.jpg");
+     background-size: cover;
 
+
+    }
+    .header-class{
+      padding-bottom:10px;
+    }
+    .headings{
+
+      margin-bottom:40px;
+    }
+    .date {
+        font-weight: bold;
+        color: #ec3a61;
+        padding-right: 24px;
+        font-size: 20px;
+    }
+.add-note{
+  margin-top:50px;
+  background-color: rgb(17, 148, 209);
+  height:40px;
+}
+.icons-trash{
+  color: #ec3a61;
+  float:right;
+  font-size:1.5em;
+}
 }

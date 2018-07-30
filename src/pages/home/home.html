@@ -1,14 +1,25 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="navbar" class="header-class">
     <ion-title>
-      Ionic Blank
+         My Notes
     </ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only><ion-icon name="book"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="masters">
+<h1 class="headings">Your List of To Do :-</h1>
+  <ion-list>
+    <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
+      <span class="date">{{ note.date }}</span>
+      {{note.title}}
+
+    </button>
+  </ion-list>
+
+  <button ion-button block (click)="addNote()" class="add-note">Add note</button>
+
 </ion-content>
